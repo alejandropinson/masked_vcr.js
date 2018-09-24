@@ -105,7 +105,7 @@ To mask a fixture for an specific endpoint, add to the **maskedFixtures.json** f
 }
 ```
 
-- **endpoint:** The endpoint you want the fixtures to be masked
+- **endpoint:** The endpoint you want the fixtures to be masked from
 - **properties:** The key of the properties you want to be masked
 
 
