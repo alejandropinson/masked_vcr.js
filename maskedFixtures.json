@@ -1,0 +1,14 @@
+[
+	{
+		"endpoint": "/v5/sm/mylegalentities",
+		"properties": ["legalEntityDesc"]
+	},
+	{
+		"endpoint": "/v2/secm/oam/oauth2/token",
+		"properties": ["customerDesc", "fullName", "firstName", "lastName", "phoneNumber"]
+	},
+	{
+		"endpoint": "/v5/sm/orders/",
+		"properties": ["customerDesc"]
+	}
+]
