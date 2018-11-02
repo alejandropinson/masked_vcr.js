@@ -95,6 +95,27 @@ response from `https://ap.io/users` is streamed to the client and is also saved 
 If you want to save fixtures from proxy under a custom variant, just set the `record_fixture_variant` cookie with any word you want as the value.
 With the `record_fixture_variant=blacklistedUser` cookie the recorded fixtures will be saved as `{path}/GET.blacklistedUser.json`.
 
+## Mask fixtures
+To mask a fixture for an specific endpoint, add to the **maskedFixtures.json** file (in the root directory) an object with the next schema:
+
+```
+{
+  "endpoint": "some/endpoint",
+  "properties": ["property1", "property2", ...]
+}
+```
+
+- **endpoint:** The endpoint you want the fixtures to be masked from
+- **properties:** The key of the properties you want to be masked
+
+
+The default replace value is **'YYY'**, which can be modified in the next file:
+
+***maskFixture.ts***
+```
+  stringifiedFixture = setProperty(stringifiedFixture, property, 'YYY');
+```
+
 ## Development
 
 ```console
