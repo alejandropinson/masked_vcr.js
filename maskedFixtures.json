@@ -1,14 +1,125 @@
 [
 	{
+		"endpoint": "/v1/oe/fleetcoverages",
+		"properties": ["userAccountCreation", "userAccountChange"]
+	},
+	{
+		"endpoint": "/v1/oe/fleettypes",
+		"properties": ["userAccountCreation", "userAccountChange"]
+	},
+	{
+		"endpoint": "/v1/oe/myfleets",
+		"properties": ["userAccountCreation", "userAccountChange"]
+	},
+	{
+		"endpoint": "/v1/oe/settings/offer/unlocktime",
+		"properties": ["userAccountCreation"]
+	},
+	{
+		"endpoint": "/v1/pe/paymentsbanklist",
+		"properties": ["description", "accountNumber"]
+	},
+	{
+		"endpoint": "/v1/rc/myprofiles",
+		"properties": ["profileName"]
+	},
+	{
+		"endpoint": "/v2/arm/legalentityjobsites",
+		"properties": ["jobSiteDesc"]
+	},
+	{
+		"endpoint": "/v2/arm/ticketsbydocument",
+		"properties": ["pointOfDeliveryDesc", "pointOfDeliveryAddress"]
+	},
+	{
+		"endpoint": "/v2/crm/createdispute",
+		"properties": ["customerDesc"]
+	},
+	{
+		"endpoint": "/v2/crm/disputesbyinvoice",
+		"properties": ["fileName"]
+	},
+	{
+		"endpoint": "/v2/secm/oam/oauth2/token",
+		"properties": [
+			"customerDesc",
+			"fullName",
+			"firstName",
+			"lastName",
+			"phoneNumber",
+			"contactName",
+			"contactEmail",
+			"contactPhone"
+		]
+	},
+	{
+		"endpoint": "/v2/crm/mycontacts",
+		"properties": ["name", "phone", "email"]
+	},
+	{
+		"endpoint": "/v2/arm/financialdocuments",
+		"properties": ["documentCode", "referenceNumber", "relatedDocument", "customerCode"]
+	},
+	{
+		"endpoint": "/v2/arm/legalentity",
+		"properties": ["companyCode", "companyDesc"]
+	},
+	{
+		"endpoint": "/v2/arm/legalentitypayers",
+		"properties": ["payerDesc"]
+	},
+	{
+		"endpoint": "/v2/arm/legalentitycustomers",
+		"properties": ["customerCode", "customerDesc"]
+	},
+	{
+		"endpoint": "/v2/cum/customers",
+		"properties": ["customerDesc", "streetName", "domicileNum", "settlementDesc", "postalCode"]
+	},
+	{
+		"endpoint": "/v2/pe/referencehistory",
+		"properties": ["paymentRecipient", "userCreateCode", "userUpdateDesc"]
+	},
+	{
+		"endpoint": "/v3/crm/disputes/comments",
+		"properties": ["userDesc"]
+	},
+	{
+		"endpoint": "/v3/legal/lienreleases",
+		"properties": ["phone", "requestedName", "customerDesc", "email", "customerCode", "jobSiteAddress", "jobSiteDesc"]
+	},
+	{
+		"endpoint": "/v4/sm/addresses",
+		"properties": ["streetName", "domicileNum", "postalCode", "settlementDesc", "crossStreetName1", "crossStreetName2"]
+	},
+	{
+		"endpoint": "/v4/sm/orders",
+		"properties": ["customerDesc", "customerCode"]
+	},
+	{
+		"endpoint": "/v4/sm/myshipmentlocations",
+		"properties": ["shipmentLocationDesc"]
+	},
+	{
+		"endpoint": "/v5/dm/myplants",
+		"properties": ["telephone", "contactPhone", "plantDesc"]
+	},
+	{
 		"endpoint": "/v5/sm/mylegalentities",
 		"properties": ["legalEntityDesc"]
 	},
 	{
-		"endpoint": "/v2/secm/oam/oauth2/token",
-		"properties": ["customerDesc", "fullName", "firstName", "lastName", "phoneNumber"]
-	},
-	{
-		"endpoint": "/v5/sm/orders/",
-		"properties": ["customerDesc"]
+		"endpoint": "/v5/sm/orders",
+		"properties": [
+			"customerDesc",
+			"userAccount",
+			"userFullName",
+			"email",
+			"contactName",
+			"contactPhone",
+			"pointOfDeliveryDesc",
+			"jobsiteDesc",
+			"instructions"
+		]
 	}
 ]
